@@ -8,43 +8,40 @@ Resume
 <!DOCTYPE html>
 <html lang="EN-CA">
   <head>
-    <title> Home </title>
+    <title>Sydney Yee - Resume</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="initial-sale=1.0, width=device-width">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
 
     <!-- 
-Code copied from: https://www.w3schools.com/css/tryit.aspfilename=trycss_dropdown_navbar2
-
+Code copied from: https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar2
 Author: W3Schools 
-
 Name: CSS Dropdowns 
-
 Description: Demonstrates how to create a navigation bar along with a dropdown menu 
-
 Date retrieved: Wednesday, November 12, 2025
 -->
 
     <style>
       html {
         font-size: 16px;
-        /* change ems */
       }
 
       body {
         margin: 0;
         padding: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
       }
 
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: white;
-        height: 80px;
-        display: flex;
-        align-items: center;
-      }
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
 
       li {
         margin: auto;
@@ -59,7 +56,7 @@ Date retrieved: Wednesday, November 12, 2025
         display: inline-block;
         color: rgb(146, 110, 79);
         text-align: center;
-        padding: 20px 10px;
+        padding: 10px 10px;
         text-decoration: none;
       }
 
@@ -72,7 +69,7 @@ Date retrieved: Wednesday, November 12, 2025
         position: absolute;
         background-color: #f9f9f9;
         min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
         z-index: 1;
         top: 50px;
       }
@@ -84,7 +81,6 @@ Date retrieved: Wednesday, November 12, 2025
         display: block;
         text-align: left;
       }
-
 
       li a:hover,
       .dropdown:hover .dropbtn {
@@ -101,70 +97,248 @@ Date retrieved: Wednesday, November 12, 2025
         display: block;
       }
 
-      .overlay {
-        position: relative;
-        text-align: center;
-        color: white;
+      .fullwidth {
+        width: 100%;
+        margin-top: 2em;
       }
 
-      .centered {
-        position: absolute;
-        top: 75%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+      .resume-container {
+        padding: 40px;
       }
 
-      mark {
-        background-color: rgb(248, 247, 246);
+      .header {
+        background-color: #D8C4E8;
         padding: 20px;
-        display: inline-block;
-        width: 500px;
-        height: 1em;
-        border-radius: 10px;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .header p {
+        margin: 5px 0;
+        font-size: 0.95em;
+      }
+
+      h1 {
+        font-size: 3em;
+        margin: 20px 0;
+        font-weight: bold;
+      }
+
+      .section-title {
+        background-color: #D8C4E8;
+        padding: 10px 15px;
+        font-weight: bold;
+        font-size: 1.3em;
+        margin: 30px 0 15px 0;
+        border-bottom: 3px solid #9B7EBD;
       }
 
       .content {
-        width: 100%;
-        display: block;
-        overflow: hidden;
-        clear: both;
+        margin: 15px 0;
       }
 
-      .fullwidth {
-        width: 100%;
-        display: block;
-        clear: both;
+      .job-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 5px;
+      }
+
+      .date {
+        font-style: italic;
+        font-size: 0.95em;
+      }
+
+      .resume-bullets {
+        list-style-type: disc;
+        padding-left: 25px;
         margin: 0;
-        margin-top: 2em;
-        height: auto;
+        display: block;
+      }
+
+      .resume-bullets li {
+        margin: 8px 0;
       }
     </style>
   </head>
+
   <body>
+
     <ul>
       <li class="logo"><a href="https://sydney-yee21.github.io/Home/"><img src="Logo.png" alt="Sydney Yee" style="width:120px; height:50px;"></a></li>
-      <li><a href="https://sydney-yee21.github.io/Home/"><b>Home</b></a></li>
+      <li><a href="https://sydney-yee21.github.io/Home/">Home</a></li>
       <li><a href="https://sydney-yee21.github.io/About/">About</a></li>
       <li class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn">Projects</a>
+        <a class="dropbtn">Projects</a>
         <div class="dropdown-content">
           <a href="https://sydney-yee21.github.io/Videography/">Videography</a>
           <a href="#">Service Design</a>
           <a href="#">Website Redesign</a>
         </div>
       </li>
-      <li><a href="https://sydney-yee21.github.io/Resume/">Resume</a></li>
-      <li><a href="#home">Contact</a></li>
+      <li><a href="https://sydney-yee21.github.io/Resume/"><b>Resume</b></a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
 
-    <div class="fullwidth">
-      <img src="line.png" alt="diagonal black line" style="width:100%;">
+    <div class="resume-container">
+
+      <div class="header">
+        <p>Toronto ON | (647) - 877 - 9248 | sydney.yee21@gmail.com |</p>
+        <p>www.linkedin.com/in/sydney-yee21</p>
+      </div>
+
+      <h1>SYDNEY YEE</h1>
+
+      <div class="section-title">SKILLS</div>
+      <div class="content">
+        <p><strong>Software:</strong> Photoshop, Illustrator, InDesign, Premiere Pro, Figma, Capcut, iMovie, Canva, Microsoft 360, Notion, Framer, Slack</p>
+        <p><strong>Coding:</strong> Python, JavaScript, HTML/CSS</p>
+        <p><strong>Languages:</strong> English (Native), French (Limited)</p>
+      </div>
+
+      <div class="section-title">EDUCATION</div>
+      <div class="content">
+        <div class="job-header">
+          <div>
+            <p><strong>University of Waterloo</strong></p>
+            <p>Bachelor of Global Business Digital Arts</p>
+          </div>
+          <div class="date">Sept 2024 - Dec 2029</div>
+        </div>
+      </div>
+
+      <div class="section-title">CLUBS</div>
+      <div class="content">
+        <div class="job-header">
+          <div>
+            <p><strong>University of Waterloo Marketing Association - Marketing Associate</strong></p>
+            <p style="font-weight: bold;">Tools: Adobe Creative Cloud, Canva, Instagram, TikTok, Microsoft Teams, Framer</p>
+          </div>
+          <div class="date">Sept 2025 - Ongoing</div>
+        </div>
+        <ul class="resume-bullets">
+          <li>Created digital content on the club’s social media platforms to promote student engagement and event participation.</li>
+          <li>Collaborated with cross-functional teams (finance, events, sponsorships) in weekly meetings to align marketing goals and strategies.</li>
+          <li>Researched and applied social media trends to design relevant content that enhances brand’s visibility.</li>
+          <li>Redesigned the UWMA website in Framer to align with and strengthen the organization’s brand identity.</li>
+
+        </ul>
+      </div>
+
+      <div class="section-title">PROJECTS</div>
+
+      <div class="content">
+        <div class="job-header">
+          <div>
+            <p><strong>The Spanish Room - Digital Specialist</strong></p>
+            <p style="font-weight: bold;">Tools: Adobe Creative Cloud, Canva, Notion, Framer</p>
+          </div>
+          <div class="date">Sept 2025 - Ongoing</div>
+        </div>
+        <ul class="resume-bullets">
+          <li>Collaborated with a cross-functional team of designers, marketers, and business owners at The Spanish Room.</li>
+          <li>Redesigned and built a website using Framer for a cohesive brand image and increase digital presence.</li>
+          <li>Used Notion to organize content, plan workflows, and manage project tasks.</li>
+
+        </ul>
+      </div>
+
+      <div class="content">
+        <div class="job-header">
+          <div>
+            <p><strong>Service Design Card Game Project</strong></p>
+            <p style="font-weight: bold;">Tools: Canva, Adobe Premiere Pro, Google Slides, Google Docs, Zoom</p>
+          </div>
+          <div class="date">Sept 2025 - Ongoing</div>
+        </div>
+        <ul class="resume-bullets">
+          <li>Collaborated in a team to create an educational card game inspired by key concepts from a business service design book.</li>
+          <li>Developed both physical and digital prototypes, applying principles of service design.</li>
+          <li>Conducted user test sessions to observe gameplay, gather feedback, and refine card mechanics, instructions, and visuals for clarity and engagement.</li>
+          <li> Produced two capstone videos explaining the game’s concept, design process, and user insights, showcasing the evolution from idea to final prototype.</li>
+
+        </ul>
+      </div>
+
+      <div class="content">
+        <div class="job-header">
+          <div>
+            <p><strong>Kitchener Art Walk Magazine Design</strong></p>
+            <p style="font-weight: bold;">Tools: InDesign, Canon 90D</p>
+          </div>
+          <div class="date">Dec 2024</div>
+        </div>
+        <ul class="resume-bullets">
+          <li>Created a magazine highlighting the Kitchener artwork, combining original photography and editorial design.</li>
+          <li>Captured high quality images on the Canon 90D, showcasing local artists and the community atmosphere.</li>
+          <li>Designed the magazine on InDesign, integrating text, imagery, and composition for professional print quality.</li>
+          <li>Successfully printed a cohesive publication that reflects the diversity of the local art scene.</li>
+        </ul>
+      </div>
+
+      <div class="content">
+        <div class="job-header">
+          <div>
+            <p><strong>Custom Branding Project: Logo &amp Poster Design</strong></p>
+            <p style="font-weight: bold;">Tools: Adobe Illustrator &amp Photoshop</p>
+          </div>
+          <div class="date">Oct 2024</div>
+        </div>
+        <ul class="resume-bullets">
+          <li>Designed a custom logo and promotional poster based on client-provided paragraph.</li>
+          <li>Developed a symbolic brand identity using a hand reaching out of a box to grasp their name, reflecting the client's desire to break free from traditional labels.</li>
+          <li>Successfully captured and communicated the client's vision for a unique and authentic brand image.
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="section-title">WORK</div>
+
+      <div class="content">
+        <div class="job-header">
+          <div>
+            <p><strong>Marketing Assistant - Good Intentions</strong></p>
+          </div>
+          <div class="date">Nov 2022 - Jan 2023</div>
+        </div>
+        <ul class="resume-bullets">
+          <li>Developed engaging Instagram stories and reels to showcase store products.</li>
+          <li>Inputted inventory details, including quantity, price, and product names, into the system.</li>
+          <li>Utilized POS system for accurate sales recording and transaction management.</li>
+          <li>Designed eye-catching window displays to effectively market various products.</li>
+          <li>Crafted compelling Instagram prompts, polls, and captions for posts and stories.</li>
+
+
+        </ul>
+      </div>
+
+      <div class="content">
+        <div class="job-header">
+          <div>
+            <p><strong>Server - Mocha Mocha</strong></p>
+          </div>
+          <div class="date">May 2022 - Sept 2023</div>
+        </div>
+        <ul class="resume-bullets">
+       <li>Managed multiple tables simultaneously while maintaining high service quality.</li>
+<li>Served food and beverages promptly, prioritizing customer needs.
+Utilized POS system for order placement, bill management, and complimentary items handling.</li>
+  <li>Collaborated with team members during peak shifts to enhance workflow efficiency.</li>
+
+        </ul>
+      </div>
+
+      <div class="section-title">AWARDS</div>
+      <div class="content">
+        <ul class="resume-bullets">
+          <li>1st Place OBEA Poster Contest, 06/01/24, Monarch Park Collegiate Institute, Toronto, ON</li>
+          <li>University of Waterloo Financial Literacy Competition, 05/01/24, Monarch Park Collegiate Institute, Toronto, ON</li>
+          <li>Enriched Academy - Financial Literacy, 03/01/24, Monarch Park Collegiate Institute, Toronto, ON</li>
+        </ul>
+      </div>
+
     </div>
-
-    
-
-
-
 
   </body>
 </html>
